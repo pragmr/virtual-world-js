@@ -13,6 +13,8 @@
 
         </div>
         <script src="js/graphEditor.js"></script>
+        <script src="js/viewport.js"></script>
+
         <script src="js/math/utils.js"></script>       
 
         <script src="js/math/graph.js"></script>       
@@ -51,6 +53,7 @@ function removeAll() {
 
 
             const graph = new Graph([p1, p2, p3, p4], [s1, s2, s3, s4]);
+            const viewport = new Viewport(myCanvas);
             const graphEditor = new GraphEditor(myCanvas, graph);
             
             animate();
