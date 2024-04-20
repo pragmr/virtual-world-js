@@ -34,6 +34,15 @@ function getNearestPoint(loc, points, threshold = Number.MAX_SAFE_INTEGER) {
 
  }
 
+ function normalize(p) {
+   return scale(p, 1 / magnitude(p));
+
+ }
+
+ function magnitude(p) {
+   return Math.hypot(p.x, p.y);
+ }
+
 
  function translate(loc, angle, offset) {
    return new Point(
