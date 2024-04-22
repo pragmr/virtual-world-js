@@ -180,10 +180,8 @@ class World {
             b.base.distanceToPoint(viewPoint) -
             a.base.distanceToPoint(viewPoint)
       );
-
       for (const item of items) {
          item.draw(ctx, viewPoint);
       }
-      
    }
 }
