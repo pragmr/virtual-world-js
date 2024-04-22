@@ -3,7 +3,8 @@ class Tree {
        this.center = center;
        this.size = size; // size of the base
        this.heightCoef = heightCoef;
-       
+       this.base = this.#generateLevel(center, size);
+
     }
 
     #generateLevel(point, size) {
@@ -34,7 +35,7 @@ class Tree {
          poly.draw(ctx, { fill: color, stroke: "rgba(0,0,0,0)" });
       }
    
-
+      this.base.draw(ctx);
    }
 }
  
