@@ -7,10 +7,11 @@ class Tree {
  
    
  
-    draw(ctx) {
+    draw(ctx, viewPoint) {
+      const diff = subtract(this.center, viewPoint);
       this.center.draw(ctx, { size: this.size, color: "lightgreen" });
 
-      const top = add(this.center, { x: -40, y: -40 });
+      const top = add(this.center, diff);
       new Segment(this.center, top).draw(ctx);
     }
  }
