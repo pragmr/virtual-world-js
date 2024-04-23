@@ -26,9 +26,7 @@ class Crossing  {
         dash: [11, 11]
      });
 
-     for(const b of this.borders){
-      b.draw(ctx);
-     }
+     
       
 
     }
