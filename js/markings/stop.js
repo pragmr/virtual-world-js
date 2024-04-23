@@ -10,9 +10,10 @@ class Stop  {
         translate(center, angle(directionVector), -height / 2)
 
       );
+      this.poly = new Envelope(this.support, width, 0).poly;
     }
  
     draw(ctx) {
-      this.support.draw(ctx);
+      this.poly.draw(ctx);
     }
  }
