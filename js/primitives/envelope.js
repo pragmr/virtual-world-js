@@ -1,8 +1,8 @@
 class Envelope {
     constructor(skeleton, width, roundness = 1) {
         if (skeleton) {
-       this.skeleton = skeleton;
-       this.poly = this.#generatePolygon(width, roundness);
+            this.skeleton = skeleton;
+            this.poly = this.#generatePolygon(width, roundness);
     }
 }
    
