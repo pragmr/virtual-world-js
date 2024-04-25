@@ -25,7 +25,9 @@ class World {
       this.generate();
    }
    static load(info){
-      return new World(Graph.load(info.graph));
+      const world = new World(new Graph());
+      world.graph = Graph.load(info.graph);
+      return world;
    }
 
    generate() {
